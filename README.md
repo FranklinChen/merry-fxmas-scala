@@ -1,10 +1,8 @@
-# merry-fxmas
+# merry-fxmas in Scala using macros
+
+[![Build Status](https://travis-ci.org/FranklinChen/merry-fxmas-scala.png)](https://travis-ci.org/FranklinChen/merry-fxmas-scala)
 
 Say "Merry Christmas" 25 times counting down, in [Scala](http://www.scala-lang.org/), using a [macro](http://docs.scala-lang.org/overviews/macros/overview.html) to unroll the loop.
-
-For fun, I used a [quasiquote](http://docs.scala-lang.org/overviews/macros/quasiquotes.html) where I could.
-
-The build uses [macro paradise](http://docs.scala-lang.org/overviews/macros/paradise.html) to get the bleeding edge stuff on macros for the upcoming Scala 2.11.
 
 ## Usage
 
