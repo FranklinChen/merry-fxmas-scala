@@ -9,13 +9,12 @@ object Macros {
   def repeatMessageMacro(c: Context)(n: c.Tree) = {
     import c.universe._
 
-    // Assume integer passed is constant
+    // Assume integer passed is constant. Crash if not!
     val Literal(Constant(num: Int)) = n
 
     // Not only unroll, but also construct the strings at compile time
     val unrolledSeq = num to 1 by -1 map { i =>
-      val s = "Merry Christmas Bill " + i + "!"
-
+      val s = s"Merry Christmas Bill $i!"
       q"println($s)"
     }
 

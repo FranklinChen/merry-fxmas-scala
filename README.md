@@ -6,10 +6,6 @@ Say "Merry Christmas" 25 times counting down, in [Scala](http://www.scala-lang.o
 
 ## Usage
 
-Install [SBT](http://www.scala-sbt.org/) if you don't already have it.
-
-To see the output:
-
 ```
 $ sbt run
 ```
