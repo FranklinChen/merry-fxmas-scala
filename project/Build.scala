@@ -5,7 +5,7 @@ object MyBuild extends Build {
   override lazy val settings = super.settings ++ Seq(
     organization := "com.franklinchen",
     version := "1.0.0",
-    scalaVersion := "2.11.7",
+    scalaVersion := "2.11.8",
     scalacOptions += "-deprecation"
   )
 
