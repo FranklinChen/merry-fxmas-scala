@@ -2,7 +2,7 @@ name := "merry-fxmas"
 organization := "com.franklinchen"
 version := "1.0"
 
-scalaVersion in ThisBuild := "2.12.3"
+scalaVersion in ThisBuild := "2.12.4"
 run := (run in Compile in core).evaluated
 
 lazy val macros = (project in file("macros")).settings(

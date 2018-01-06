@@ -1,12 +1,15 @@
 sudo: false
+dist: trusty
 language: scala
 cache:
   directories:
     - $HOME/.ivy2/cache
     - $HOME/.sbt/boot/
 scala:
-  - 2.12.3
+  - 2.12.4
 jdk:
+  - oraclejdk9
+  - openjdk8
   - oraclejdk8
 script:
   - sbt ++$TRAVIS_SCALA_VERSION test
